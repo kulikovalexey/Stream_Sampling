@@ -17,6 +17,7 @@ class Sampler
     }
 
     /**
+     * Reservoir sampling (Algorithm R)
      * @param $length
      * @return string
      */
