@@ -4,8 +4,8 @@ spl_autoload_register(function ($class) {
     include 'classes/' . $class . '.php';
 });
 
-const DEFAULT_SOURCE_LENGTH = 1000;
-const RANDOM_ORG_URL = 'https://www.random.org/strings/?num=10&len=10&upperalpha=on&unique=on&format=plain&rnd=new';
+define('DEFAULT_SOURCE_LENGTH', 1000);
+define('RANDOM_ORG_URL', 'https://www.random.org/strings/?num=10&len=10&upperalpha=on&unique=on&format=plain&rnd=new');
 
 $options = getopt('', ['source:', 'length:']);
 if (!isset($options['source']) || !isset($options['length'])) {
